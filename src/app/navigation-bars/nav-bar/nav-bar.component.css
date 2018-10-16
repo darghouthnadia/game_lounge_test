@@ -1,0 +1,25 @@
+.navbar li {
+    margin: 5px 20px;
+    font-weight: bold;
+
+}
+
+.navbar li a {
+    color: #043a53;
+}
+
+.navbar li:first-child{
+    margin-right: 40px;
+}
+
+.container {
+    max-width: 100%;
+
+    
+}
+
+    .container ul { 
+        width: 100%;
+    }
+
+

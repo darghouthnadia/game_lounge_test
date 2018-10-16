@@ -1,0 +1,19 @@
+<div id="wrapper" class="toggled">
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="bg-light">
+            <div *ngFor='let item of menuList'>
+
+                <a class="dropdown-btn" [attr.name]="item.name" >
+                    <img [src]="'../../../assets/'+item.icon" class="icon">{{item.name}}
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-container">
+                    <a *ngFor='let sub_item of item.sub' [attr.href]="sub_item.href">
+                            <img [src]="'../../../assets/'+sub_item.thumb" class="icon">
+                        {{sub_item.name}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
