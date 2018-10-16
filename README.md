@@ -13,10 +13,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 # Project structure
 The project has the following structure:
 - Navigation bars module: This module contains all the component that contribute to create the navigation system. it's composed by: 
-⋅⋅* bars-animation: Logic , design and implementation of the 'hamburger' icon animation
-⋅⋅* nav-bar: Logic , design and implementation of the nav bar. This component is the parent of bars-animation component and transfer it's notifciation to it's parent bars-system.
-⋅⋅* side-bar: Logic , design and implementation of the side bar animation and events handling.
-⋅⋅* bars-system:  Logic , design and implementation of the whole navigation system. Parent for both nav-bar and side-bar.
+  * bars-animation: Logic , design and implementation of the 'hamburger' icon animation
+  * nav-bar: Logic , design and implementation of the nav bar. This component is the parent of bars-animation component and transfer it's notifciation to it's parent bars-system.
+  * side-bar: Logic , design and implementation of the side bar animation and events handling.
+  * bars-system:  Logic , design and implementation of the whole navigation system. Parent for both nav-bar and side-bar.
 - get-menu-json.service: A simple 'get' call to send the json file for the component who needs it.
 - modele: Interfaces for both 'menu' and 'subMenu' used to facilitate the handling of objects
 - app.component: simply call the app-bars-system to display
