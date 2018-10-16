@@ -37,11 +37,13 @@ export class BarsSystemComponent implements OnInit {
   }
 
   onNotify(message: string): void {
+    //This function is called whenever we click on the burger icon
     this.sideBar.toggleSideBar();
     this.sideBar.prepareEventListner();
   }
 
   onNotifySidebar(name_menu: string) {
+    //This function is called whenever we click on the navbar menu
     this.sideBar.openSpecificMenu(name_menu);
   }
 
